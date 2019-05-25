@@ -6,7 +6,7 @@
   "scripts": {
     "build": "gulp",
     "dev": "gulp sass:watch",
-		"start": "npm gulp | http-server -o"
+    "start": "npm gulp | http-server -o"
   },
   "keywords": [],
   "author": "",
