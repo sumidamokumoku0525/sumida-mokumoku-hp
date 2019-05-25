@@ -1,0 +1,17 @@
+.event {
+  background: #F5F8F8;
+  &__inner {
+    @include inner;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    @include mq(lsp) {
+      flex-direction: column;
+    }
+  }
+  &__btn-wrap {
+    text-align: center;
+    margin-top: 50px;
+  }
+}

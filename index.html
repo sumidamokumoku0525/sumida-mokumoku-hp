@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>すみだもくもく会</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="wrapper">
+    <header class="header">
+      <h1 class="header__logo">
+        <img src="img/logo_header.svg" alt="SUMIDA MOKUMOKU">
+      </h1>
+      <ul class="header__sns">
+        <li><a href="#" class="header__sns-link"><img src="img/icon_gh.svg" alt="githubページへ"></a></li>
+        <li><a href="#" class="header__sns-link"><img src="img/icon_tw.svg" alt="Twitterアカウント"></a></li>
+        <li><a href="#" class="header__sns-link"><img src="img/icon_cp.svg" alt="commpassページへ"></a></li>
+      </ul>
+      <div class="header__arrow">
+        <img src="img/arrow_header.svg" alt="">
+      </div>
+    </header>
+    <main>
+      <div class="about container">
+        <div class="about__inner">
+          <h2 class="container__ttl">About</h2>
+          <p class="about__text">
+            すみだもくもく会とは、みんなで集まって墨田区でもくもく作業をする会です。<br>
+            参加すると一緒に勉強してくれる仲間が見つかります。</p>
+          <p class="about__text">そもそも、もくもく会とは…？</p>
+          <blockquote class="about__quote">カフェとか誰かの家とかに集まって、<br>
+          それぞれ各自もくもくと勉強したり作業したり<br>
+          本を読んだりするだけの会のこと。</blockquote>
+          <p class="about__text">
+            プログラミングしたり、資格勉強をしたり、語学の勉強をしたり…<br>
+            様々な用途で参加するメンバーがいます。<br>
+            すみだもくもく会で一緒にもくもくしましょう！
+          </p>
+        </div>
+      </div>
+      <div class="event container">
+        <div class="event__inner">
+          <h2 class="container__ttl">Event</h2>
+          <!-- <p class="event__lead">直近のイベント情報</p> -->
+          <ul class="event__list">
+            <li class="event-item">
+              <a class="event-link" href="">
+                <div class="event-item__img event-link__img">
+                  <div class="event-link__img-body" style="background: url(img/event/190524.jpg) no-repeat center center; background-size: 100% auto"></div>
+                  <!-- <img src="img/event/190524.jpg" alt=""> -->
+                </div>
+                <div class="event-item__info">
+                  <span class="event-link__ttl">
+                    <span class="event-link__ttl-inner">すみだもくもく会 #1</span>
+                  </span>
+                  <span class="event-link__date">2019.05.24 Sat</span>
+                </div>
+              </a>
+            </li>
+            <li class="event-item">
+              <a class="event-link" href="">
+                <div class="event-item__img event-link__img">
+                  <div class="event-link__img-body" style="background: url(img/event/190524.jpg) no-repeat center center; background-size: 100% auto"></div>
+                  <!-- <img src="img/event/190524.jpg" alt=""> -->
+                </div>
+                <div class="event-item__info">
+                  <span class="event-link__ttl">
+                    <span class="event-link__ttl-inner">すみだもくもく会 #2</span>
+                  </span>
+                  <span class="event-link__date">2019.06.29 Sat</span>
+                </div>
+              </a>
+            </li>
+            <li class="event-item">
+              <a class="event-link" href="">
+                <div class="event-item__img event-link__img">
+                  <div class="event-link__img-body" style="background: url(img/event/190524.jpg) no-repeat center center; background-size: 100% auto"></div>
+                  <!-- <img src="img/event/190524.jpg" alt=""> -->
+                </div>
+                <div class="event-item__info">
+                  <span class="event-link__ttl">
+                    <span class="event-link__ttl-inner">すみだもくもく会 #3</span>
+                  </span>
+                  <span class="event-link__date">2019.07.24 Sat</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="event__btn-wrap">
+            <a href="https://sumida-mokumoku.connpass.com/" class="btn" target="_blank">その他のイベントはこちら</a>
+          </div>
+        </div>
+      </div>
+      <div class="contact container">
+        <div class="contact__inner">
+          <h2 class="container__ttl">Contact</h2>
+          <div class="contact__form">
+            <form action="">
+              <label for="name">お名前</label>
+              <input type="text" name="name" id="name">
+              <label for="email">メールアドレス</label>
+              <input type="email" name="email" id="email">
+              <label for="detail">お問い合わせ内容</label>
+              <textarea name="detail" id="detail"></textarea>
+              <div class="contact__btn-wrap">
+                <button type="submit" class="btn">この内容で送信</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <small class="footer__copy">&copy; Sumida Mokumoku All Rights Reserved.</small>
+    </footer>
+  </div>  
+</body>
+</html>

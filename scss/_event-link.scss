@@ -1,0 +1,57 @@
+.event-link {
+  $this: &;
+  display: block;
+  text-decoration: none;
+  background: #fff;
+  transition: all .6s ease;
+  @include shadow;
+  &__img-body {
+    height: calc(980px * 94 / 300 * 0.65);
+    transition: all .5s ease;
+    @include mq(spc) {
+      height: 94vw * 94 / 300 * 0.65;
+    }
+    @include mq(lsp) {
+      height: 90vw * 0.65;
+    }
+  }
+  &__ttl {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;
+    height: 3em;
+    margin-bottom: 20px;
+    color: $text-color;
+    overflow: hidden;
+  }
+  &__ttl-inner {
+    background-image: linear-gradient(180deg, transparent 45%, #d2ffef 0);
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    transition: background-size .6s ease;
+  }
+  &__date {
+    font-size: 14px;
+    color: #ccc;
+    font-weight: bold;
+    transition: color .6s ease;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 7px 9px rgba(0, 0, 0, 0.1);
+    #{$this}__img-body {
+      transform: scale(1.1);
+      opacity: .7;
+    }
+    #{$this}__ttl-inner {
+      background-size: 100% 100%;
+    }
+    #{$this}__date {
+      color: #83e0bf;
+    }
+  }
+}
+

@@ -1,0 +1,30 @@
+.about {
+  background: url(../img/bg_about_logo.svg),url(../img/pt_about.gif);
+  background-repeat: no-repeat, repeat;
+  background-size: auto 100%, auto;
+  background-position: center center;
+  &__inner {
+    @include inner;
+  }
+  &__text {
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @include mq(lsp) {
+      text-align-last: left;
+    }
+  }
+  &__quote {
+    background: rgba(228, 228, 228, 0.5);
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,31 @@
+$text-color: #093945;
+
+$breakpoints: (
+  'ssp': 'screen and (max-width: 320px)',
+  'msp': 'screen and (max-width: 375px)',
+  'lsp': 'screen and (max-width: 414px)',
+  'tb' : 'screen and (max-width: 768px)',
+  'spc': 'screen and (max-width: 980px)',
+) !default;
+
+@mixin mq($breakpoint: tb) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin inner {
+  max-width: 980px;
+  margin: 0 auto;
+  @include mq(spc) {
+    padding: 0 3%;
+  }
+  @include mq(tb) {
+    padding: 0 5%;
+  }
+}
+
+@mixin shadow {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+

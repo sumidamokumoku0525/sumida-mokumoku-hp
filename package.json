@@ -1,0 +1,20 @@
+{
+  "name": "doc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "dev": "gulp sass:watch",
+		"start": "npm gulp | http-server -o"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "http-server": "^0.11.1"
+  }
+}

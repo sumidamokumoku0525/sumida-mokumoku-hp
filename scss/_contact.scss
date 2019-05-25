@@ -1,0 +1,35 @@
+.contact {
+  &__inner {
+    @include inner;
+  }
+  &__form {
+    max-width: 600px;
+    margin: 0 auto;
+    label {
+      display: block;
+      font-size: 14px;
+      color: #959595;
+      margin-bottom: 10px;
+    }
+    input[type=text],
+    input[type=email],
+    textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      background: #fff;
+      border: 1px solid #D1D1D1;
+      border-radius: 4px;
+      padding: 12px 16px;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+    textarea {
+      height: 1em * 1.4 * 4;
+    }
+  }
+  &__btn-wrap {
+    text-align: center;
+    margin-top: 50px;
+  }
+}
