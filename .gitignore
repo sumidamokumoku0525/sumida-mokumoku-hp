@@ -1,3 +1,6 @@
 node_modules/*
+
 public/css/maps/*
 public/js/*
+public/_redirects
+
