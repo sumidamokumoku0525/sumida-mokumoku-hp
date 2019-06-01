@@ -6,7 +6,7 @@
   "scripts": {
     "build": "gulp | webpack --mode production",
     "sass": "gulp sass:watch",
-    "start": "npm gulp | webpack-dev-server --open"
+    "start": "gulp | webpack-dev-server --open"
   },
   "keywords": [],
   "author": "",
